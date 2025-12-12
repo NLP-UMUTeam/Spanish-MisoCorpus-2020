@@ -29,15 +29,15 @@
 
 > **Affiliations**  
 > *Faculty of Computer Science, University of Murcia, Spain*  
-> *Faculty of Computer Sciences, Østfold University College, Norway* :contentReference[oaicite:5]{index=5}  
+> *Faculty of Computer Sciences, Østfold University College, Norway*
 
 ---
 
 ### Publication
 > **Detecting misogyny in Spanish tweets. An approach based on linguistics features and word embeddings**  
-> *Future Generation Computer Systems*, Volume 114, 2021, Pages 506–518. :contentReference[oaicite:6]{index=6}  
+> *Future Generation Computer Systems*, Volume 114, 2021, Pages 506–518.
 
-- **DOI:** https://doi.org/10.1016/j.future.2020.08.032 :contentReference[oaicite:7]{index=7}  
+- **DOI:** https://doi.org/10.1016/j.future.2020.08.032
 
 ---
 
