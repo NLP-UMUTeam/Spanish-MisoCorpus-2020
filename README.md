@@ -46,7 +46,7 @@ Online social networks provide unprecedented reach to spread messages that targe
 
 ---
 
-## Dataset
+### Dataset
 
 Spanish MisoCorpus-2020 is a **balanced binary classification corpus** of Spanish tweets labelled as:
 
@@ -61,7 +61,7 @@ Tweets were compiled from multiple sources, including:
 
 Each tweet was annotated by at least two annotators; inter-coder agreement measured with **Krippendorff’s Alpha** reached **0.6864**, which is acceptable given the ambiguity of the domain.
 
-### Access
+#### Access
 
 To comply with Twitter’s terms of service, the dataset is released as **lists of tweet IDs**.
 
@@ -73,9 +73,7 @@ https://pln.inf.um.es/corpora/misogyny/misocorpus-spanish-2020.rar
 
 Each subset is distributed in two files: one containing IDs of tweets labelled as *misogyny* and another with IDs labelled as *not misogyny*.
 
----
-
-## Corpus Statistics
+#### Corpus Statistics
 
 The following table summarizes the size and annotation density of each subset and of the full corpus:
 
@@ -106,7 +104,25 @@ Experiments are run with three classifiers:
 - Sequential Minimal Optimization (SMO, SVM)  
 - Linear SVM (LSVM) 
 
-The best result for MisoCorpus-2020 is obtained with **AWE+LF + SMO**, achieving an accuracy of **85.175%**, clearly outperforming the BoW baseline and single-feature models.   
+The best result for MisoCorpus-2020 is obtained with **AWE+LF + SMO**, achieving an accuracy of **85.175%**, clearly outperforming the BoW baseline and single-feature models. 
+
+### Summary of Classification Results (Accuracy %)
+
+| Classifier | Model  | VARW  | SELA   | DDSS   | SMC-2020 |
+|------------|--------|-------|--------|--------|----------|
+| **RF**     | BoW      | 78.930 | 76.967 | 74.734 | 76.215  |
+|            | AWE      | **82.092** | **81.307** | **79.063** | 77.232 |
+|            | LF       | 81.112 | 81.740 | 77.613 | 79.237  |
+|            | AWE+LF   | 82.092 | 81.307 | 78.912 | **79.302** |
+| **SMO**    | BoW      | 78.524 | 76.918 | 74.003 | 73.798  |
+|            | AWE      | **84.886** | 82.100 | **81.360** | 81.020 |
+|            | LF       | 82.403 | 80.057 | 77.976 | 78.938 |
+|            | AWE+LF   | 84.886 | **85.175** | 81.208 | **85.175** |
+| **LSVM**   | BoW      | 80.053 | 78.476 | 77.698 | 77.060  |
+|            | AWE      | **84.480** | **81.859** | **81.148** | 80.825 |
+|            | LF       | 82.283 | 81.115 | 79.245 | 79.263 |
+|            | AWE+LF   | 84.480 | 83.734 | 80.755 | **82.882** |
+
 
 The model is also validated on the **AMI 2018** misogyny dataset and the **HatEval 2019** hate-speech dataset (Task A), where it improves both previous maxima and baselines in macro-averaged F1, confirming the close relationship between misogyny and hate speech against women. 
 
