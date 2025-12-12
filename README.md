@@ -59,7 +59,7 @@ Tweets were compiled from multiple sources, including:
 - tweets authored from **European Spanish** and **Latin American Spanish** users  
 - tweets discussing general misogynistic topics such as gender violence or harassment   
 
-Each tweet was annotated by at least two annotators; inter-coder agreement measured with **Krippendorff’s Alpha** reached **0.6864**, which is acceptable given the ambiguity of the domain. :contentReference[oaicite:11]{index=11}  
+Each tweet was annotated by at least two annotators; inter-coder agreement measured with **Krippendorff’s Alpha** reached **0.6864**, which is acceptable given the ambiguity of the domain.
 
 ### Access
 
@@ -77,7 +77,7 @@ Each subset is distributed in two files: one containing IDs of tweets labelled a
 
 ## Corpus Statistics
 
-The following table summarizes the size and annotation density of each subset and of the full corpus: :contentReference[oaicite:13]{index=13}  
+The following table summarizes the size and annotation density of each subset and of the full corpus:
 
 | Name             | Misogyny | Not misogyny | Mean \# annotations |
 |------------------|---------:|-------------:|--------------------:|
@@ -86,7 +86,7 @@ The following table summarizes the size and annotation density of each subset an
 | DDSS             | 1,665    | 1,665        | 2.1595              |
 | **MisoCorpus-2020** | **3,841** | **3,841**     | **2.2240**           |
 
-Note that VARW, SELA and DDSS are **not disjoint**: some tweets belong to more than one subset, so their sizes do not sum to the total number of tweets in MisoCorpus-2020. :contentReference[oaicite:14]{index=14}  
+Note that VARW, SELA and DDSS are **not disjoint**: some tweets belong to more than one subset, so their sizes do not sum to the total number of tweets in MisoCorpus-2020.
 
 ---
 
@@ -108,7 +108,7 @@ Experiments are run with three classifiers:
 
 The best result for MisoCorpus-2020 is obtained with **AWE+LF + SMO**, achieving an accuracy of **85.175%**, clearly outperforming the BoW baseline and single-feature models.   
 
-The model is also validated on the **AMI 2018** misogyny dataset and the **HatEval 2019** hate-speech dataset (Task A), where it improves both previous maxima and baselines in macro-averaged F1, confirming the close relationship between misogyny and hate speech against women. :contentReference[oaicite:19]{index=19}  
+The model is also validated on the **AMI 2018** misogyny dataset and the **HatEval 2019** hate-speech dataset (Task A), where it improves both previous maxima and baselines in macro-averaged F1, confirming the close relationship between misogyny and hate speech against women. 
 
 ---
 
