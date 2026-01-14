@@ -1,0 +1,19 @@
+{
+  "title": "Spanish-MisoCorpus-2020",
+  "doi": "10.5281/zenodo.18243769",
+  "description": "A Spanish Twitter corpus for misogyny detection with multiple thematic subsets.",
+  "language": "es",
+  "data_type": "text",
+  "source": "Twitter",
+  "license": "CC BY-NC 4.0",
+  "access": {
+    "public": "tweet identifiers and annotations",
+    "restricted": "tweet text available upon request"
+  },
+  "year": 2020,
+  "updated": 2026,
+  "related_resources": [
+    "https://github.com/NLP-UMUTeam/Spanish-MisoCorpus-2020",
+    "https://doi.org/10.5281/zenodo.18243769"
+  ]
+}
