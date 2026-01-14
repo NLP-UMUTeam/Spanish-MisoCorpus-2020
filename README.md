@@ -1,5 +1,11 @@
 # Spanish-MisoCorpus-2020
 ## Detecting misogyny in Spanish tweets: An approach based on linguistic features and word embeddings  
+Spanish-MisoCorpus-2020 is a Spanish Twitter corpus for misogyny detection, originally released in 2020.
+The dataset includes several thematic subsets (e.g. SELA, VARW, DDSS) and was manually annotated following detailed annotation guidelines.
+
+This repository provides:
+- the original data distribution used in the publication,
+- and an updated, consolidated version designed to improve reuse and FAIR compliance.
 
 ### TL-DR: Highlights
 - Compilation of **Spanish MisoCorpus-2020**, a balanced corpus of Spanish tweets related to misogyny.
@@ -47,7 +53,26 @@ Online social networks provide unprecedented reach to spread messages that targe
 ---
 
 ### Dataset
+The repository contains two main data distributions:
 
+#### 1. Original distribution (legacy)
+The original dataset distribution follows the structure used in the associated publication, where tweets are grouped into multiple text files according to subset and class label. These files are preserved for reproducibility purposes.
+
+
+#### 2. Consolidated FAIR-friendly distribution (recommended)
+
+A consolidated, tabular version of the dataset is provided to facilitate reuse and interoperability.
+
+- `corpus/misocorpus_public.csv`
+  - Public version of the dataset.
+  - Contains tweet identifiers and annotations only (no tweet text).
+  - Fully compliant with Twitter Terms of Service.
+
+  - Restricted version including tweet text.
+  - Available for research purposes upon request.
+
+
+#### Notes about the dataset
 Spanish MisoCorpus-2020 is a **balanced binary classification corpus** of Spanish tweets labelled as:
 
 - `misogyny`
@@ -62,13 +87,12 @@ Tweets were compiled from multiple sources, including:
 Each tweet was annotated by at least two annotators; inter-coder agreement measured with **Krippendorff’s Alpha** reached **0.6864**, which is acceptable given the ambiguity of the domain.
 
 #### Access
+Due to Twitter’s Terms of Service, the publicly available version of the dataset only includes tweet identifiers and annotations.
 
-To comply with Twitter’s terms of service, the dataset is released as **lists of tweet IDs**.
-
-The MisoCorpus-2020 IDs (full corpus and individual subsets) can be downloaded from:
+The full version of the dataset, including tweet text, can be made available for research purposes upon request. Access is granted under controlled conditions and for non-commercial research use only.
 
 ```
-https://pln.inf.um.es/corpora/misogyny/misocorpus-spanish-2020.rar
+https://forms.gle/dEghDPJJ8QrKTDTT9
 ```
 
 Each subset is distributed in two files: one containing IDs of tweets labelled as *misogyny* and another with IDs labelled as *not misogyny*.
@@ -128,6 +152,23 @@ The model is also validated on the **AMI 2018** misogyny dataset and the **HatEv
 
 ---
 
+## Licence
+
+The dataset is distributed under the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) licence.
+
+This licence applies to the annotations and dataset structure. Tweet text remains subject to Twitter’s Terms of Service.
+
+
+## Provenance
+The dataset was manually annotated by trained annotators following detailed annotation guidelines.
+Each instance was reviewed by at least two annotators, with disagreements resolved through discussion.
+
+The original release did not include predefined train/test splits.
+An additional split strategy has been later introduced to facilitate experimental reproducibility, while preserving the original data distribution.
+
+
+---
+
 ## Acknowledgments
 This work has been supported by the *Spanish National Research Agency (AEI)* and the *European Regional Development Fund (FEDER/ERDF)* through projects **KBS4FIA (TIN2016-76323-R)** and **LaTe4PSP (PID2019-107652RB-I00)**. 
 In addition, José Antonio García-Díaz has been supported by *Banco Santander* and *University of Murcia* through the **Doctorado industrial programme**.
@@ -136,7 +177,7 @@ In addition, José Antonio García-Díaz has been supported by *Banco Santander*
 
 ## Citation
 
-If you use **Spanish MisoCorpus-2020** in your research, please cite the following paper:
+If you use this dataset in your research, please cite the following paper:
 
 ```
 @article{garcia2021detecting,
