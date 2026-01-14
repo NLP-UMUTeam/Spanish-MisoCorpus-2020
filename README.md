@@ -89,6 +89,13 @@ Tweets were compiled from multiple sources, including:
 
 Each tweet was annotated by at least two annotators; inter-coder agreement measured with **Krippendorff’s Alpha** reached **0.6864**, which is acceptable given the ambiguity of the domain.
 
+Columns:
+- tweet_id: Twitter identifier
+- label: misogyny / non_misogyny
+- subset: MISOCORPUS, SELA, VARW, DDSS
+- split: train / test / dev / none
+- source: twitter
+
 #### Access
 Due to Twitter’s Terms of Service, the publicly available version of the dataset only includes tweet identifiers and annotations.
 
