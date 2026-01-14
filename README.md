@@ -1,5 +1,8 @@
 # Spanish-MisoCorpus-2020
 ## Detecting misogyny in Spanish tweets: An approach based on linguistic features and word embeddings  
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18243769.svg)](https://doi.org/10.5281/zenodo.18243769)
+
+
 Spanish-MisoCorpus-2020 is a Spanish Twitter corpus for misogyny detection, originally released in 2020.
 The dataset includes several thematic subsets (e.g. SELA, VARW, DDSS) and was manually annotated following detailed annotation guidelines.
 
@@ -176,7 +179,6 @@ In addition, José Antonio García-Díaz has been supported by *Banco Santander*
 ---
 
 ## Citation
-
 If you use this dataset in your research, please cite the following paper:
 
 ```
@@ -190,3 +192,11 @@ If you use this dataset in your research, please cite the following paper:
   publisher={Elsevier}
 }
 ```
+
+or the Zenodo record:
+```
+García-Díaz, J. A. et al. (2026).
+Spanish-MisoCorpus-2020: A Spanish Twitter Corpus for Misogyny Detection.
+Zenodo. https://doi.org/10.5281/zenodo.18243769
+```
+
